@@ -3,62 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Asman | Portfolio</title>
-    <link rel="icon" href="apl.png">
+    <title>My - Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="apl.png">
 </head>
 <body>
 
-    <header class="navbar">
-        <a href="#home" class="logo">A</a>
+<div class="site-shell" id="home">
 
-        <nav>
+    <header class="topbar">
+        <a class="logo" href="#home">A</a>
+
+        <button class="hamburger" id="burger" aria-expanded="false" aria-controls="menu" aria-label="Открыть меню">
+          <span class="hamburger-bars" aria-hidden="true">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </span>
+        </button>
+
+        <nav class="nav" id="nav">
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#languages">Languages</a>
-            <a href="#contact me">Contact Me</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
 
-
     <main>
-        <section class="hero" id="home">
-            <div class="hero-text">
-                <h1>Hello<br>I'm Asman</h1>
-                <h3>Ala-Too Student</h3>
-                <p>This is my portfolio</p>
-                <div class="socials">
-                <a href="https://www.instagram.com/tkkas_11/" target="_blank">📷</a>
-                <a href="https://t.me/t_amn0" target="_blank">✈️</a>
+        <section class="hero">
+
+            <div class="hero-copy">
+                <p class="welcome" id="greeting">Welcome!</p>
+
+                <button class="introduce" id="askName">
+                    Introduce yourself
+                </button>
+
+                <div class="intro-title">
+                    <h1 id="greeting">Hello<br>I'm Asman</h1>
+                    <p>Ala-Too Student</p>
+                    <p>This is my portfolio</p>
+                </div>
             </div>
 
+            <div class="hero-photo-wrap">
+                <img src="me.jpeg" class="myphoto" alt="My photo">
             </div>
 
-            <img src="me.jpeg" alt="Asman" class="profile-photo" width = 300>
         </section>
 
         <section class="about-card" id="about">
-            <img src="kairat.jpeg" alt="Football team" width = 300>
 
-            <div class="about-text">
+            <img src="kairat.jpeg" class="kairat-photo" alt="My team">
+
+            <div>
                 <h2>About me</h2>
-                <h3>Ala-Too Student</h3>
+                <p class="subtitle">Ala-Too Student</p>
 
-                <p>  
-                    My name is Asman. I'm 17 years old. I studied at school №26 and after 9th class left to Ala-Too College. I study WEB-Programming and programming languages like Python, Java and others.
+                <p>
+                    My name is Asman. I'm 17 years old. I studied at school №26 and after 9th class left to the Ala-Too College. I study WEB-Programming and programming languages like Python, Java and others.
                 </p>
 
                 <p>
-                    In Ala-Too I study in group SCA-25C.
-                    I also like sports like football, basketball,
-                    ping-pong and more.
+                    In Ala-Too I study in group SCA-25C. I also like sports like football, basketball, ping-pong and e.t.c.
                 </p>
             </div>
+
         </section>
+    </main>
 
-        <section class="languages" id="languages">
-            <h2>LANGUAGES</h2>
+    <section class="languages" id="languages">
 
+        <h2>LANGUAGES</h2>
+
+        <div class="table-wrap">
             <table>
                 <thead>
                     <tr>
@@ -72,52 +91,59 @@
                         <td>English</td>
                         <td>B1</td>
                     </tr>
+
                     <tr>
                         <td>Russian</td>
                         <td>C1</td>
                     </tr>
+
                     <tr>
                         <td>Kyrgyz</td>
                         <td>B2</td>
                     </tr>
+
                     <tr>
                         <td>French</td>
                         <td>A2</td>
                     </tr>
                 </tbody>
             </table>
-        </section>
-
-       <footer id="contact me">
-    <div class="footer-profile">
-        <span class="logo">A</span>
-        <h3>Toktaliev Asman</h3>
-    </div>
-
-    <p class="footer-question">
-        If you have any questions about me
-    </p>
-
-    <a href="mailto:your-email@example.com" class="contact-btn">
-        Contact me
-    </a>
-
-    <div class="footer-socials">
-        <a href="https://www.instagram.com/tkkas_11/" class="instagram">📷</a>
-        <a href="https://t.me/t_amn0" class="telegram">✈️</a>
-    </div>
-
-    <div class="footer-bottom">
-        <span>📍 Kyrgyzstan</span>
-        <span>© 2026, All Rights Reserved.</span>
-        <div class="footer-links">
-            <a href="#home">Guides</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
         </div>
-    </div>
-</footer>
 
-    
+    </section>
+
+    <footer class="contact" id="contact">
+
+        <div class="footer-name">
+            <span class="footer-logo">A</span>
+            <strong>Toktaliev Asman</strong>
+        </div>
+
+        <p>If you have any questions about me</p>
+
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=toktalievasman0@gmail.com" class="contact-button">
+            Contact me
+        </a>
+
+        <div class="social-bottom">
+            <a href="https://www.instagram.com/tkkas_11/" class="social instagram">📷</a>
+            <a href="https://t.me/t_amn0" class="social telegram">✈️</a>
+        </div>
+
+        <small>⌖ Kyrgyzstan</small>
+
+    </footer>
+
+</div>
+
+
+<button class="to-top" id="toTop">↑</button>
+
+
+
+<script src="script.js"></script>
+
+
+
 </body>
 </html>
