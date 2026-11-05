@@ -19,7 +19,7 @@ body {
     width: min(100%, 790px);
     min-height: 100vh;
     margin: 0 auto;
-    background-color: #ffdf00;
+    background-color: #ffdf50;
     overflow: hidden;
 }
 /* HEADER */
@@ -118,7 +118,7 @@ body {
 .introduce {
     border: 0;
     padding: 5px 8px;
-    background: #ffdf00;
+    background: #ffdf50;
     color: #111;
     text-decoration: underline;
     font-size: 13px;
@@ -341,79 +341,6 @@ td {
     transform: translateY(0);
 }
 
-/* POPUP */
-
-.modal-backdrop {
-    position: fixed;
-    inset: 0;
-    background: #0009;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    z-index: 20;
-    opacity: 0;
-    visibility: hidden;
-    transition: 0.2s ease;
-}
-
-.modal-backdrop.open {
-    opacity: 1;
-    visibility: visible;
-}
-
-.modal {
-    width: min(100%, 390px);
-    position: relative;
-    background: white;
-    border-radius: 16px;
-    padding: 30px;
-    box-shadow: 0 18px 60px #0005;
-}
-
-.modal h2 {
-    margin: 0 0 8px;
-}
-
-.modal p {
-    margin: 0 0 18px;
-    color: #666;
-}
-
-.modal-close {
-    position: absolute;
-    right: 13px;
-    top: 9px;
-    border: 0;
-    background: none;
-    font-size: 27px;
-    cursor: pointer;
-}
-
-#nameForm {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-#nameInput {
-    padding: 12px;
-    border: 1px solid #bbb;
-    border-radius: 8px;
-    font-size: 16px;
-}
-
-#nameForm button {
-    border: 0;
-    border-radius: 8px;
-    padding: 12px;
-    background: #0645f5;
-    color: white;
-    font-weight: 700;
-    font-size: 15px;
-    cursor: pointer;
-}
-
 /* MOBILE VERSION */
 
 @media (max-width: 600px) {
@@ -512,26 +439,5 @@ td {
 
     .contact-button {
         font-size: 22px;
-    }
-}
-
-@media (max-width: 370px) {
-
-    .hero {
-        grid-template-columns: 1fr;
-    }
-
-    .intro-title {
-        margin-top: 30px;
-    }
-
-    .myphoto-wrap {
-        width: 68%;
-        justify-self: start;
-        margin-left: 12px;
-    }
-
-    .social-vertical {
-        right: -38px;
     }
 }

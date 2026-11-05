@@ -62,7 +62,7 @@ nav.querySelectorAll("a").forEach(function(link) {
 
 function updateTopButton() {
 
-    if (window.scrollY > 250) {
+    if (window.scrollY > 150) {
 
         toTop.classList.add("visible");
 
